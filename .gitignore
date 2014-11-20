@@ -13,6 +13,7 @@ profile
 *~.nib
 DerivedData/
 build/
+**/xcuserdata
 
 ####
 # Desired Lock Files
