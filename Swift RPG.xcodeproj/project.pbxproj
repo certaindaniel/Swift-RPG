@@ -10,26 +10,82 @@
 		B12FF92819FBD938000F82E6 /* GameResources in Resources */ = {isa = PBXBuildFile; fileRef = B12FF92719FBD938000F82E6 /* GameResources */; };
 		B134897719C7F15A0049BA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134897619C7F15A0049BA86 /* AppDelegate.swift */; };
 		B134898219C7F15A0049BA86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B134898119C7F15A0049BA86 /* Images.xcassets */; };
-		B134898E19C7F15A0049BA86 /* Combatant_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134898D19C7F15A0049BA86 /* Combatant_Tests.swift */; };
 		B16200A519C9869A00BBD117 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16200A319C9869A00BBD117 /* MainMenuViewController.swift */; };
 		B16200A619C9869A00BBD117 /* MainMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B16200A419C9869A00BBD117 /* MainMenuView.xib */; };
 		B16200A919C9907600BBD117 /* FightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16200A719C9907600BBD117 /* FightViewController.swift */; };
 		B16200AA19C9907600BBD117 /* FightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B16200A819C9907600BBD117 /* FightView.xib */; };
+		B18890301A1D82D200E78C36 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B188901D1A1D826600E78C36 /* Nimble.framework */; };
+		B18890311A1D82D200E78C36 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18890291A1D826600E78C36 /* Quick.framework */; };
+		B18890321A1D873600E78C36 /* Combatant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1996E4819DE35AF00540727 /* Combatant.swift */; };
+		B18890341A1D889400E78C36 /* Combatant_UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18890331A1D889400E78C36 /* Combatant_UnitTests.swift */; };
 		B1996E4919DE35AF00540727 /* Combatant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1996E4819DE35AF00540727 /* Combatant.swift */; };
 		B1AC0B3C19FB624100D9CB80 /* NumberFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AC0B3B19FB624100D9CB80 /* NumberFormatting.swift */; };
+		DD4EF216750CD6B6288675C8 /* libPods-Swift RPG Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF47DCF15801363AD4587305 /* libPods-Swift RPG Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B134898819C7F15A0049BA86 /* PBXContainerItemProxy */ = {
+		B188901C1A1D826600E78C36 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B134896919C7F15A0049BA86 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B134897019C7F15A0049BA86;
-			remoteInfo = "Simple RPG";
+			containerPortal = B18890151A1D826600E78C36 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74291940169200FFFC47;
+			remoteInfo = "Nimble-iOS";
+		};
+		B188901E1A1D826600E78C36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B18890151A1D826600E78C36 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74341940169200FFFC47;
+			remoteInfo = "Nimble-iOSTests";
+		};
+		B18890201A1D826600E78C36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B18890151A1D826600E78C36 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EAD195C0D6300ED456B;
+			remoteInfo = "Nimble-OSX";
+		};
+		B18890221A1D826600E78C36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B18890151A1D826600E78C36 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
+			remoteInfo = "Nimble-OSXTests";
+		};
+		B18890281A1D826600E78C36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B18890121A1D826600E78C36 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B8E1943873100289F44;
+			remoteInfo = "Quick-OSX";
+		};
+		B188902A1A1D826600E78C36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B18890121A1D826600E78C36 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B991943873100289F44;
+			remoteInfo = "Quick-OSXTests";
+		};
+		B188902C1A1D826600E78C36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B18890121A1D826600E78C36 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D117C19473F2100F6D13D;
+			remoteInfo = "Quick-iOS";
+		};
+		B188902E1A1D826600E78C36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B18890121A1D826600E78C36 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D118619473F2100F6D13D;
+			remoteInfo = "Quick-iOSTests";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5FB53FEDFA069B47BA22F597 /* Pods-Swift RPG Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift RPG Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift RPG Tests/Pods-Swift RPG Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9D9423D2059346A9F274587A /* Pods-Swift RPG Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift RPG Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift RPG Tests/Pods-Swift RPG Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF47DCF15801363AD4587305 /* libPods-Swift RPG Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swift RPG Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B12FF92719FBD938000F82E6 /* GameResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GameResources; sourceTree = "<group>"; };
 		B134897119C7F15A0049BA86 /* Swift RPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift RPG.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B134897519C7F15A0049BA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,11 +93,13 @@
 		B134898119C7F15A0049BA86 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B134898719C7F15A0049BA86 /* Swift RPGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift RPGTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B134898C19C7F15A0049BA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B134898D19C7F15A0049BA86 /* Combatant_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combatant_Tests.swift; sourceTree = "<group>"; };
 		B16200A319C9869A00BBD117 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		B16200A419C9869A00BBD117 /* MainMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuView.xib; sourceTree = "<group>"; };
 		B16200A719C9907600BBD117 /* FightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FightViewController.swift; sourceTree = "<group>"; };
 		B16200A819C9907600BBD117 /* FightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FightView.xib; sourceTree = "<group>"; };
+		B18890121A1D826600E78C36 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = ../Vendor/Quick/Quick.xcodeproj; sourceTree = "<group>"; };
+		B18890151A1D826600E78C36 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = ../Vendor/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
+		B18890331A1D889400E78C36 /* Combatant_UnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combatant_UnitTests.swift; sourceTree = "<group>"; };
 		B1996E4819DE35AF00540727 /* Combatant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combatant.swift; sourceTree = "<group>"; };
 		B1AC0B3B19FB624100D9CB80 /* NumberFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberFormatting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,18 +116,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18890301A1D82D200E78C36 /* Nimble.framework in Frameworks */,
+				B18890311A1D82D200E78C36 /* Quick.framework in Frameworks */,
+				DD4EF216750CD6B6288675C8 /* libPods-Swift RPG Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DF881CFDBFBA55C2CBABA56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D9423D2059346A9F274587A /* Pods-Swift RPG Tests.debug.xcconfig */,
+				5FB53FEDFA069B47BA22F597 /* Pods-Swift RPG Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B134896819C7F15A0049BA86 = {
 			isa = PBXGroup;
 			children = (
 				B134897319C7F15A0049BA86 /* Swift RPG */,
 				B134898A19C7F15A0049BA86 /* Swift RPG Tests */,
 				B134897219C7F15A0049BA86 /* Products */,
+				7DF881CFDBFBA55C2CBABA56 /* Pods */,
+				CE62D7996D30080FF301DDEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,8 +182,9 @@
 		B134898A19C7F15A0049BA86 /* Swift RPG Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B134898D19C7F15A0049BA86 /* Combatant_Tests.swift */,
 				B134898B19C7F15A0049BA86 /* Supporting Files */,
+				B18890351A1D88A100E78C36 /* Frameworks */,
+				B18890331A1D889400E78C36 /* Combatant_UnitTests.swift */,
 			);
 			name = "Swift RPG Tests";
 			path = "Swift RPGTests";
@@ -123,6 +196,37 @@
 				B134898C19C7F15A0049BA86 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B18890131A1D826600E78C36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B18890291A1D826600E78C36 /* Quick.framework */,
+				B188902B1A1D826600E78C36 /* Quick-OSXTests.xctest */,
+				B188902D1A1D826600E78C36 /* Quick.framework */,
+				B188902F1A1D826600E78C36 /* Quick-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B18890161A1D826600E78C36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B188901D1A1D826600E78C36 /* Nimble.framework */,
+				B188901F1A1D826600E78C36 /* NimbleTests.xctest */,
+				B18890211A1D826600E78C36 /* Nimble.framework */,
+				B18890231A1D826600E78C36 /* Nimble-OSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B18890351A1D88A100E78C36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B18890121A1D826600E78C36 /* Quick.xcodeproj */,
+				B18890151A1D826600E78C36 /* Nimble.xcodeproj */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B1AC0B3919FB618200D9CB80 /* Helpers */ = {
@@ -139,6 +243,14 @@
 				B1AC0B3B19FB624100D9CB80 /* NumberFormatting.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE62D7996D30080FF301DDEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF47DCF15801363AD4587305 /* libPods-Swift RPG Tests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,14 +277,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B134899419C7F15A0049BA86 /* Build configuration list for PBXNativeTarget "Swift RPG Tests" */;
 			buildPhases = (
+				B369B581D9AE48A7D65EDF6B /* Check Pods Manifest.lock */,
 				B134898319C7F15A0049BA86 /* Sources */,
 				B134898419C7F15A0049BA86 /* Frameworks */,
 				B134898519C7F15A0049BA86 /* Resources */,
+				CA3150F129EA7EC9B707AA21 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B134898919C7F15A0049BA86 /* PBXTargetDependency */,
 			);
 			name = "Swift RPG Tests";
 			productName = "Simple RPGTests";
@@ -208,6 +321,16 @@
 			mainGroup = B134896819C7F15A0049BA86;
 			productRefGroup = B134897219C7F15A0049BA86 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B18890161A1D826600E78C36 /* Products */;
+					ProjectRef = B18890151A1D826600E78C36 /* Nimble.xcodeproj */;
+				},
+				{
+					ProductGroup = B18890131A1D826600E78C36 /* Products */;
+					ProjectRef = B18890121A1D826600E78C36 /* Quick.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B134897019C7F15A0049BA86 /* Swift RPG */,
@@ -215,6 +338,65 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B188901D1A1D826600E78C36 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = B188901C1A1D826600E78C36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B188901F1A1D826600E78C36 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = B188901E1A1D826600E78C36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B18890211A1D826600E78C36 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = B18890201A1D826600E78C36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B18890231A1D826600E78C36 /* Nimble-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Nimble-OSXTests.xctest";
+			remoteRef = B18890221A1D826600E78C36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B18890291A1D826600E78C36 /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = B18890281A1D826600E78C36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B188902B1A1D826600E78C36 /* Quick-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick-OSXTests.xctest";
+			remoteRef = B188902A1A1D826600E78C36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B188902D1A1D826600E78C36 /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = B188902C1A1D826600E78C36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B188902F1A1D826600E78C36 /* Quick-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick-iOSTests.xctest";
+			remoteRef = B188902E1A1D826600E78C36 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B134896F19C7F15A0049BA86 /* Resources */ = {
@@ -237,6 +419,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B369B581D9AE48A7D65EDF6B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA3150F129EA7EC9B707AA21 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift RPG Tests/Pods-Swift RPG Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B134896D19C7F15A0049BA86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -254,19 +469,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B134898E19C7F15A0049BA86 /* Combatant_Tests.swift in Sources */,
+				B18890341A1D889400E78C36 /* Combatant_UnitTests.swift in Sources */,
+				B18890321A1D873600E78C36 /* Combatant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B134898919C7F15A0049BA86 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B134897019C7F15A0049BA86 /* Swift RPG */;
-			targetProxy = B134898819C7F15A0049BA86 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B134898F19C7F15A0049BA86 /* Debug */ = {
@@ -353,7 +561,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = "Simple RPG/Info.plist";
+				INFOPLIST_FILE = "Swift RPG/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Swift RPG";
 			};
@@ -364,7 +572,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = "Simple RPG/Info.plist";
+				INFOPLIST_FILE = "Swift RPG/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Swift RPG";
 			};
@@ -372,6 +580,7 @@
 		};
 		B134899519C7F15A0049BA86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D9423D2059346A9F274587A /* Pods-Swift RPG Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -382,25 +591,26 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Simple RPGTests/Info.plist";
+				INFOPLIST_FILE = "Swift RPGTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "Swift RPGTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simple RPG.app/Simple RPG";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift RPG.app/Swift RPG";
 			};
 			name = Debug;
 		};
 		B134899619C7F15A0049BA86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FB53FEDFA069B47BA22F597 /* Pods-Swift RPG Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Simple RPGTests/Info.plist";
+				INFOPLIST_FILE = "Swift RPGTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "Swift RPGTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simple RPG.app/Simple RPG";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift RPG.app/Swift RPG";
 			};
 			name = Release;
 		};

@@ -16,6 +16,13 @@ build/
 **/xcuserdata
 *.xccheckout
 
+
+####
+# CocoaPods
+
+Pods/
+
+
 ####
 # Desired Lock Files
 
