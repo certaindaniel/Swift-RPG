@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B12FF92819FBD938000F82E6 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = B12FF92719FBD938000F82E6 /* Resources */; };
+		B12FF92819FBD938000F82E6 /* GameResources in Resources */ = {isa = PBXBuildFile; fileRef = B12FF92719FBD938000F82E6 /* GameResources */; };
 		B134897719C7F15A0049BA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134897619C7F15A0049BA86 /* AppDelegate.swift */; };
 		B134898219C7F15A0049BA86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B134898119C7F15A0049BA86 /* Images.xcassets */; };
 		B134898E19C7F15A0049BA86 /* Simple_RPGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134898D19C7F15A0049BA86 /* Simple_RPGTests.swift */; };
@@ -30,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B12FF92719FBD938000F82E6 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		B12FF92719FBD938000F82E6 /* GameResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GameResources; sourceTree = "<group>"; };
 		B134897119C7F15A0049BA86 /* Simple RPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple RPG.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B134897519C7F15A0049BA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B134897619C7F15A0049BA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		B134897319C7F15A0049BA86 /* Simple RPG */ = {
 			isa = PBXGroup;
 			children = (
-				B12FF92719FBD938000F82E6 /* Resources */,
+				B12FF92719FBD938000F82E6 /* GameResources */,
 				B1AC0B3919FB618200D9CB80 /* Helpers */,
 				B134897619C7F15A0049BA86 /* AppDelegate.swift */,
 				B134898119C7F15A0049BA86 /* Images.xcassets */,
@@ -220,7 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B12FF92819FBD938000F82E6 /* Resources in Resources */,
+				B12FF92819FBD938000F82E6 /* GameResources in Resources */,
 				B16200A619C9869A00BBD117 /* MainMenuView.xib in Resources */,
 				B134898219C7F15A0049BA86 /* Images.xcassets in Resources */,
 				B16200AA19C9907600BBD117 /* FightView.xib in Resources */,

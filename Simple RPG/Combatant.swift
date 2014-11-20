@@ -16,15 +16,16 @@ class Combatant {
     var def:Float
     
     class func plistFolderURL() -> NSURL {
-        let folders = ["Resources", "Combatants"]
+        let folders = ["GameResources", "Combatants"]
         var path = NSBundle.mainBundle().resourcePath!
         for folder in folders {
-            path.stringByAppendingPathComponent(folder)
+            path = path.stringByAppendingPathComponent(folder)
         }
         return NSURL(fileURLWithPath: path, isDirectory: true)!
     }
     
     init(var plistName:String) {
+        plistName = plistName.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
         if !plistName.hasSuffix(".plist") {
             plistName = plistName + ".plist"
         }

@@ -86,7 +86,7 @@ class FightViewController: UIViewController {
     }
     
     func combatant(aggressor:Combatant, attacks target:Combatant) {
-        let result = aggressor.takeDmg(aggressor.pow - target.def)
+        let result = target.takeDmg(aggressor.pow - target.def)
         if result == .Died {
             let alert = UIAlertController(title: "\(target.name) is dead", message: nil, preferredStyle: .Alert)
             alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
