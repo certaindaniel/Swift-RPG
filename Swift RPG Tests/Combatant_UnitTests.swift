@@ -10,5 +10,12 @@ class Combatant_UnitTests: QuickSpec {
                 expect(dog).toNot(beNil())
             }
         }
+        
+        describe("simple fight") {
+            it ("can fight") {
+                self.tester().tapViewWithAccessibilityLabel("Fight")
+                expect(1).to(equal(1))
+            }
+        }
     }
 }

@@ -18,6 +18,7 @@
 		B18890311A1D82D200E78C36 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18890291A1D826600E78C36 /* Quick.framework */; };
 		B18890321A1D873600E78C36 /* Combatant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1996E4819DE35AF00540727 /* Combatant.swift */; };
 		B18890341A1D889400E78C36 /* Combatant_UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18890331A1D889400E78C36 /* Combatant_UnitTests.swift */; };
+		B18890371A1D8E3D00E78C36 /* KIF_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18890361A1D8E3D00E78C36 /* KIF_Extensions.swift */; };
 		B1996E4919DE35AF00540727 /* Combatant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1996E4819DE35AF00540727 /* Combatant.swift */; };
 		B1AC0B3C19FB624100D9CB80 /* NumberFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AC0B3B19FB624100D9CB80 /* NumberFormatting.swift */; };
 		DD4EF216750CD6B6288675C8 /* libPods-Swift RPG Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF47DCF15801363AD4587305 /* libPods-Swift RPG Tests.a */; };
@@ -91,7 +92,7 @@
 		B134897519C7F15A0049BA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B134897619C7F15A0049BA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B134898119C7F15A0049BA86 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B134898719C7F15A0049BA86 /* Swift RPGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift RPGTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B134898719C7F15A0049BA86 /* Swift RPG Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift RPG Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B134898C19C7F15A0049BA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B16200A319C9869A00BBD117 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		B16200A419C9869A00BBD117 /* MainMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuView.xib; sourceTree = "<group>"; };
@@ -100,6 +101,8 @@
 		B18890121A1D826600E78C36 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = ../Vendor/Quick/Quick.xcodeproj; sourceTree = "<group>"; };
 		B18890151A1D826600E78C36 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = ../Vendor/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 		B18890331A1D889400E78C36 /* Combatant_UnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combatant_UnitTests.swift; sourceTree = "<group>"; };
+		B18890361A1D8E3D00E78C36 /* KIF_Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KIF_Extensions.swift; sourceTree = "<group>"; };
+		B18890381A1D8EB000E78C36 /* Swift_RPG_Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift_RPG_Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		B1996E4819DE35AF00540727 /* Combatant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combatant.swift; sourceTree = "<group>"; };
 		B1AC0B3B19FB624100D9CB80 /* NumberFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberFormatting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				B134897119C7F15A0049BA86 /* Swift RPG.app */,
-				B134898719C7F15A0049BA86 /* Swift RPGTests.xctest */,
+				B134898719C7F15A0049BA86 /* Swift RPG Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,9 +188,10 @@
 				B134898B19C7F15A0049BA86 /* Supporting Files */,
 				B18890351A1D88A100E78C36 /* Frameworks */,
 				B18890331A1D889400E78C36 /* Combatant_UnitTests.swift */,
+				B18890361A1D8E3D00E78C36 /* KIF_Extensions.swift */,
+				B18890381A1D8EB000E78C36 /* Swift_RPG_Tests-Bridging-Header.h */,
 			);
-			name = "Swift RPG Tests";
-			path = "Swift RPGTests";
+			path = "Swift RPG Tests";
 			sourceTree = "<group>";
 		};
 		B134898B19C7F15A0049BA86 /* Supporting Files */ = {
@@ -289,7 +293,7 @@
 			);
 			name = "Swift RPG Tests";
 			productName = "Simple RPGTests";
-			productReference = B134898719C7F15A0049BA86 /* Swift RPGTests.xctest */;
+			productReference = B134898719C7F15A0049BA86 /* Swift RPG Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -471,6 +475,7 @@
 			files = (
 				B18890341A1D889400E78C36 /* Combatant_UnitTests.swift in Sources */,
 				B18890321A1D873600E78C36 /* Combatant.swift in Sources */,
+				B18890371A1D8E3D00E78C36 /* KIF_Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,9 +596,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Swift RPGTests/Info.plist";
+				INFOPLIST_FILE = "Swift RPG Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "Swift RPGTests";
+				PRODUCT_NAME = "Swift RPG Tests";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift RPG Tests/Swift_RPG_Tests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift RPG.app/Swift RPG";
 			};
 			name = Debug;
@@ -607,9 +613,10 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Swift RPGTests/Info.plist";
+				INFOPLIST_FILE = "Swift RPG Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "Swift RPGTests";
+				PRODUCT_NAME = "Swift RPG Tests";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift RPG Tests/Swift_RPG_Tests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift RPG.app/Swift RPG";
 			};
 			name = Release;
