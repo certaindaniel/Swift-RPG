@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B12FF92819FBD938000F82E6 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = B12FF92719FBD938000F82E6 /* Resources */; };
 		B134897719C7F15A0049BA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134897619C7F15A0049BA86 /* AppDelegate.swift */; };
 		B134898219C7F15A0049BA86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B134898119C7F15A0049BA86 /* Images.xcassets */; };
 		B134898E19C7F15A0049BA86 /* Simple_RPGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134898D19C7F15A0049BA86 /* Simple_RPGTests.swift */; };
@@ -15,6 +16,7 @@
 		B16200A919C9907600BBD117 /* FightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16200A719C9907600BBD117 /* FightViewController.swift */; };
 		B16200AA19C9907600BBD117 /* FightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B16200A819C9907600BBD117 /* FightView.xib */; };
 		B1996E4919DE35AF00540727 /* Combatant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1996E4819DE35AF00540727 /* Combatant.swift */; };
+		B1AC0B3C19FB624100D9CB80 /* NumberFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AC0B3B19FB624100D9CB80 /* NumberFormatting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B12FF92719FBD938000F82E6 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		B134897119C7F15A0049BA86 /* Simple RPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple RPG.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B134897519C7F15A0049BA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B134897619C7F15A0049BA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		B16200A719C9907600BBD117 /* FightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FightViewController.swift; sourceTree = "<group>"; };
 		B16200A819C9907600BBD117 /* FightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FightView.xib; sourceTree = "<group>"; };
 		B1996E4819DE35AF00540727 /* Combatant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combatant.swift; sourceTree = "<group>"; };
+		B1AC0B3B19FB624100D9CB80 /* NumberFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberFormatting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		B134897319C7F15A0049BA86 /* Simple RPG */ = {
 			isa = PBXGroup;
 			children = (
+				B12FF92719FBD938000F82E6 /* Resources */,
+				B1AC0B3919FB618200D9CB80 /* Helpers */,
 				B134897619C7F15A0049BA86 /* AppDelegate.swift */,
 				B134898119C7F15A0049BA86 /* Images.xcassets */,
 				B134897419C7F15A0049BA86 /* Supporting Files */,
@@ -116,6 +122,22 @@
 				B134898C19C7F15A0049BA86 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1AC0B3919FB618200D9CB80 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B1AC0B3A19FB618700D9CB80 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B1AC0B3A19FB618700D9CB80 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B1AC0B3B19FB624100D9CB80 /* NumberFormatting.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12FF92819FBD938000F82E6 /* Resources in Resources */,
 				B16200A619C9869A00BBD117 /* MainMenuView.xib in Resources */,
 				B134898219C7F15A0049BA86 /* Images.xcassets in Resources */,
 				B16200AA19C9907600BBD117 /* FightView.xib in Resources */,
@@ -218,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1AC0B3C19FB624100D9CB80 /* NumberFormatting.swift in Sources */,
 				B16200A519C9869A00BBD117 /* MainMenuViewController.swift in Sources */,
 				B134897719C7F15A0049BA86 /* AppDelegate.swift in Sources */,
 				B16200A919C9907600BBD117 /* FightViewController.swift in Sources */,

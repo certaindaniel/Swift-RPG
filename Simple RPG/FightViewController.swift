@@ -26,8 +26,8 @@ class FightViewController: UIViewController {
     @IBOutlet weak var escapeOutcomeLabel: UILabel!
     @IBOutlet weak var escapeOutcomeExplainButton: UIButton!
     
-    var player = Combatant(name: "Xavi")
-    var enemy = Combatant(name: "Devil")
+    var player = Combatant(plistName: "Xavi")
+    var enemy  = Combatant(plistName: "Rabid Dog")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,13 +35,15 @@ class FightViewController: UIViewController {
     }
     
     func refreshViews() {
+        let format = ".2"
+        
         playerNameLabel.text = player.name
-        playerHealthBar.progress = player.curHP / player.maxHP
-        playerHealthLabel.text = "\(player.curHP) / \(player.maxHP)"
+        playerHealthBar.progress = player.curHP
+        playerHealthLabel.text = "\((player.curHP * 100).format(format))%"
         
         enemyNameLabel.text = enemy.name
-        enemyHealthBar.progress = enemy.curHP / enemy.maxHP
-        enemyHealthLabel.text = "\(enemy.curHP) / \(enemy.maxHP)"
+        enemyHealthBar.progress = enemy.curHP
+        enemyHealthLabel.text = "\((enemy.curHP * 100).format(format))%"
     }
     
     enum Action {
@@ -52,32 +54,43 @@ class FightViewController: UIViewController {
     var enemyAction = Action.Strike
     
     @IBAction func strike() {
-        self.playerAction = .Strike
-        self.resolveTurn()
+        playerAction = .Strike
+        resolveTurn()
     }
     
     @IBAction func escape() {
-        self.playerAction = .Escape
-        self.resolveTurn()
+        playerAction = .Escape
+        resolveTurn()
     }
     
     func chooseEnemyAction() {
-        self.enemyAction = .Strike
+        enemyAction = .Strike
     }
     
     func resolveTurn() {
-        self.chooseEnemyAction()
-        self.combatant(player, performAction: playerAction, toCombatant: enemy)
-        self.combatant(enemy, performAction: enemyAction, toCombatant: player)
-        self.refreshViews()
+        chooseEnemyAction()
+        combatant(player, performAction: playerAction, toCombatant: enemy)
+        combatant(enemy, performAction: enemyAction, toCombatant: player)
+        refreshViews()
     }
     
-    func combatant(activeCombatant:Combatant, performAction action:Action, toCombatant targetCombatant:Combatant) {
+    func combatant(actor:Combatant, performAction action:Action, toCombatant target:Combatant) {
         switch action {
         case .Strike:
-            targetCombatant.takeDmg(activeCombatant.pow - targetCombatant.def)
+            combatant(actor, attacks: target)
         case .Escape:
-            UIAlertView(title: "failed", message: nil, delegate: nil, cancelButtonTitle: nil)
+            let alert = UIAlertController(title: "failed", message: nil, preferredStyle: .Alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
+            presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+    
+    func combatant(aggressor:Combatant, attacks target:Combatant) {
+        let result = aggressor.takeDmg(aggressor.pow - target.def)
+        if result == .Died {
+            let alert = UIAlertController(title: "\(target.name) is dead", message: nil, preferredStyle: .Alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
+            presentViewController(alert, animated: true, completion: nil)
         }
     }
 }

@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let mainMenuVC = MainMenuViewController(nibName: "MainMenuView", bundle: nil)
         let navCon = UINavigationController(rootViewController: mainMenuVC)
-        application.keyWindow.rootViewController = navCon
+        application.keyWindow!.rootViewController = navCon
         return true
     }
 
