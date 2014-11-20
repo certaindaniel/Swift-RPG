@@ -15,23 +15,23 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B134897019C7F15A0049BA86"
-               BuildableName = "Simple RPG.app"
-               BlueprintName = "Simple RPG"
-               ReferencedContainer = "container:Simple RPG.xcodeproj">
+               BuildableName = "Swift RPG.app"
+               BlueprintName = "Swift RPG"
+               ReferencedContainer = "container:Swift RPG.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "YES"
+            buildForRunning = "NO"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B134898619C7F15A0049BA86"
-               BuildableName = "Simple RPGTests.xctest"
-               BlueprintName = "Simple RPGTests"
-               ReferencedContainer = "container:Simple RPG.xcodeproj">
+               BuildableName = "Swift RPGTests.xctest"
+               BlueprintName = "Swift RPG Tests"
+               ReferencedContainer = "container:Swift RPG.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B134898619C7F15A0049BA86"
-               BuildableName = "Simple RPGTests.xctest"
-               BlueprintName = "Simple RPGTests"
-               ReferencedContainer = "container:Simple RPG.xcodeproj">
+               BuildableName = "Swift RPGTests.xctest"
+               BlueprintName = "Swift RPG Tests"
+               ReferencedContainer = "container:Swift RPG.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B134897019C7F15A0049BA86"
-            BuildableName = "Simple RPG.app"
-            BlueprintName = "Simple RPG"
-            ReferencedContainer = "container:Simple RPG.xcodeproj">
+            BuildableName = "Swift RPG.app"
+            BlueprintName = "Swift RPG"
+            ReferencedContainer = "container:Swift RPG.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B134897019C7F15A0049BA86"
-            BuildableName = "Simple RPG.app"
-            BlueprintName = "Simple RPG"
-            ReferencedContainer = "container:Simple RPG.xcodeproj">
+            BuildableName = "Swift RPG.app"
+            BlueprintName = "Swift RPG"
+            ReferencedContainer = "container:Swift RPG.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B134897019C7F15A0049BA86"
-            BuildableName = "Simple RPG.app"
-            BlueprintName = "Simple RPG"
-            ReferencedContainer = "container:Simple RPG.xcodeproj">
+            BuildableName = "Swift RPG.app"
+            BlueprintName = "Swift RPG"
+            ReferencedContainer = "container:Swift RPG.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

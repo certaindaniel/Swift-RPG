@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class Simple_RPGTests: XCTestCase {
+class Combatant_Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
